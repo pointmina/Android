@@ -13,4 +13,4 @@ PayApp
 
 3) 상단에 payapp이라는 텍스트가 나타남
 - app bar(툴바/액션바) 활용 => https://developer.android.com/guide/fragments/appbar?hl=ko
--  
+- 참고자료 => https://m3.material.io/components/top-app-bar/overview
