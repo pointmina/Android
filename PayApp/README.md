@@ -12,6 +12,8 @@ PayApp
   (android:state_selected="true" 설정) 메뉴가 선택 안됐을때도 보여줘야한다.
 - 모양이 동일하고 색상만 변경하면 되면 걍 itemIconTint 사용하면 된다.
 - 기존 테마 때매 내가 설정한 스타일이 안먹음 =>
+- 액티비티에 프레그먼트 컨테이너뷰(FragmentContainterView)를 만들고 name으로 class(kt)를 이어줘야한다.
+- 상단에 한토페이가 계속 보여지는데 이거는 KT파일에 appbar가 들어있는 fragment파일 아이디를 전달해서 보여준다.
 
 2) 버튼을 선택할 때 나머지 영역의 화면 전환
 - https://developer.android.com/guide/fragments?hl=ko
