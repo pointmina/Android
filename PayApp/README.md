@@ -21,8 +21,9 @@ PayApp
 - small screen에서 보면 바텀 네비게이션을 액티비티로 나머지를 프레그먼트로 활용하고 있음
 ![image](https://github.com/pointmina/Android/assets/68779817/566d566a-21bc-42ed-9ddc-0330824f2335)
 - 그럼 상단 appbar 프레그먼트에 널것이냐 액티비티에 널것이냣?
+
+
         
-            
 3) 상단에 payapp이라는 텍스트가 나타남
 - app bar(툴바/액션바) 활용 => https://developer.android.com/guide/fragments/appbar?hl=ko
 - 참고자료 => https://m3.material.io/components/top-app-bar/overview
