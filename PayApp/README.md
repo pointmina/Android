@@ -53,8 +53,7 @@ class HomeFragment : Fragment() {
     }
 }
   ```
-- ㅇㅇ
-- 
+
 
 <br>
 
@@ -64,6 +63,8 @@ c) 상단에 payapp이라는 텍스트가 나타남
 
 
 d) 결제수단 화면
-- 곡선 모양 corner radius
+- 곡선 모양 corner radius : root shape
 - alt를 누르면 피그마에서 자세한 수치를 볼 수 있음
 - 결제 수단 아무곳을 누르면 결제 수단 등록을 할 수 있는 화면 구
+-  네이게이션 라이브러리에서 데스티네이션 간의 이동을 정의하는 방법 : Safe Args : https://developer.android.com/guide/navigation/use-graph/safe-args?hl=ko
+-  ㄴ> estination을 연결하게 되면 네비게이션 그래프에서 actio이라는 태그를 사용해가지고 화면 이동과 관련된 정보를 선언하고 있었는데 이 기능을 클래스가 제공해주는 기능으로 변환됨
