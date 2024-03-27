@@ -15,6 +15,8 @@ a) 하단에 홈과 송금 메뉴버튼 존재
 - 기존 테마 때매 내가 설정한 스타일이 안먹음 =>
 - 액티비티에 프레그먼트 컨테이너뷰(FragmentContainterView)를 만들고 name으로 class(kt)를 이어줘야한다.
 - 상단에 한토페이가 계속 보여지는데 이거는 KT파일에 appbar가 들어있는 fragment파일 아이디를 전달해서 보여준다.
+- navhost..?
+- 
       
 <br>
 
@@ -24,11 +26,44 @@ b) 버튼을 선택할 때 나머지 영역의 화면 전환
 - ![image](https://github.com/pointmina/Android/assets/68779817/566d566a-21bc-42ed-9ddc-0330824f2335)
 - 그럼 상단 appbar 프레그먼트에 널것이냐 액티비티에 널것이냣?
 - 네비게이션 라이브러리 : https://developer.android.com/guide/navigation?hl=ko#kts
-- ㄴ> 화면 이동 설계, 화면 전환 설계하기
+- ㄴ> 화면 이동 설계, 화면 전환 설계하기, fragmentManager -> 커밋젭알;
+- 네비게이션바 + 네비게이션 라이브러리 결합! => https://developer.android.com/guide/navigation/integrations/ui
+- 뷰바인딩 => https://developer.android.com/topic/libraries/view-binding?hl=ko
+- 프레그먼트 바인딩은 쨰끔 다름
+```
+class HomeFragment : Fragment() {
 
+    private var _binding: FragmentHomeBinding? = null
+    //호출될 때마다 현재에 저장되어 있는 값이 반환된다.
+    private  val binding get() = _binding!!
+
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View {
+        _binding = FragmentHomeBinding.inflate(inflater, container, false)
+        return binding.root
+    }
+
+    //뷰에 다시 접근할 수 없도록 알려줌
+    override fun onDestroy() {
+        super.onDestroy()
+        _binding = null
+    }
+}
+  ```
+- ㅇㅇ
+- 
 
 <br>
 
 c) 상단에 payapp이라는 텍스트가 나타남
 - app bar(툴바/액션바) 활용 => https://developer.android.com/guide/fragments/appbar?hl=ko
 - 참고자료 => https://m3.material.io/components/top-app-bar/overview
+
+
+d) 결제수단 화면
+- 곡선 모양 corner radius
+- alt를 누르면 피그마에서 자세한 수치를 볼 수 있음
+- 결제 수단 아무곳을 누르면 결제 수단 등록을 할 수 있는 화면 구
