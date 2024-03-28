@@ -1,7 +1,9 @@
 PayApp
 -
 
-1. Home화면 구현
+Home화면 구현
+-
+
 <br>
     
 a) 하단에 홈과 송금 메뉴버튼 존재
@@ -68,3 +70,20 @@ d) 결제수단 화면
 - 결제 수단 아무곳을 누르면 결제 수단 등록을 할 수 있는 화면 구
 -  네이게이션 라이브러리에서 데스티네이션 간의 이동을 정의하는 방법 : Safe Args : https://developer.android.com/guide/navigation/use-graph/safe-args?hl=ko
 -  ㄴ> estination을 연결하게 되면 네비게이션 그래프에서 actio이라는 태그를 사용해가지고 화면 이동과 관련된 정보를 선언하고 있었는데 이 기능을 클래스가 제공해주는 기능으로 변환됨
+
+송금 계좌 목록
+-
+
+a) 반복적으로 나타나는 레이아웃
+- 화면 가득 채우기
+- 하면을 벗어나는 영역까지 데이터가 그려져야함
+- 스크롤 가능해야(item.xml에서 layout의 height를 wrap_content로 해보쟝!)
+- 리사이클러
+
+
+
+
+
+b)
+
+c)
