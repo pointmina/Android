@@ -79,6 +79,10 @@ a) 반복적으로 나타나는 레이아웃
 - 하면을 벗어나는 영역까지 데이터가 그려져야함
 - 스크롤 가능해야(item.xml에서 layout의 height를 wrap_content로 해보쟝!)
 - 리사이클러
+- 모서리 둥글게 => shapeableImageView(shapeAppearance)
+- 리사이클러뷰에 나타날 데이터 관리하는 클래스 -> 어뎁터
+- 어뎁터 = 리사이클 뷰에 나타날 데이터를 관리하는 클래스 역할 
+- 
 
 
 
